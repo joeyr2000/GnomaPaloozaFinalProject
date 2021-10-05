@@ -1,0 +1,376 @@
+
+body {
+    background: linear-gradient(rgba(255,0,0,0) 20%, rgba(145, 39, 76, 0.45)), url("img/tileset.png");
+    font-family: Cambria, Georgia, serif;
+    background-attachment: fixed;
+    margin: 0;
+}
+#wrapper {
+    height: 100%; width: 100%;
+    font-size: 110%;
+}
+.dropdown {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+header {
+    height: 70px;
+    background: #98282f;
+    text-align: center;
+    color: #f6f2ef;
+    font-style: italic;
+    font-family: "Calisto MT", Cambria, Georgia, serif;
+}
+header a {
+    text-decoration: none;
+    font-size: 150%;
+}
+header a:link {
+    color: #f6f2ef;
+}
+header a:visited {
+    color: #f6f2ef;
+}
+header a:hover {
+    color: #d4cdaf;
+    transition: ease-out 1s;
+}
+
+h1 {
+    margin: 0 .2em 0;
+    padding: .1em .2em .1em;
+}
+nav {
+    margin-top: 0;
+    text-align: center;
+    font-size: 125%;
+}
+.navBar {
+    background: #ba5e63;
+}
+.navBackground {
+    border-bottom: #98282f solid 2px;
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0) 50%, #98282f 50%);
+    width: 100%;
+    background-size: 200% 100%;
+    transition: background-position;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:link {
+    color: #f6f2ef;
+}
+nav a:visited {
+    color: #f6f2ef;
+}
+nav a:hover {
+    color: #d4cdaf;
+    letter-spacing: 2px;
+    transition: ease-out 1s;
+}
+.navBackground:hover {
+    background-position: 100%;
+}
+.drop-menu {
+    display: none;
+}
+.dropdown:hover .drop-menu {
+    display: block;
+}
+.dividerContainer {
+    padding-top: 70px;
+    overflow: hidden;
+}
+#divider {
+    background-image: url("img/divider.png"); background-repeat: repeat-x;
+    height: 40px; width: 300%;
+    animation: dividerSlide 90s linear infinite;
+}
+@keyframes dividerSlide {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+main {
+    padding: 1px 30px 30px 30px;
+    display: block;
+    background: #f6f2ef;
+    overflow: auto;
+}
+h2, h3 {
+    color: #Aa4c51;
+    font-style: italic;
+}
+p {
+    color: #548052;
+    text-indent: 50px;
+}
+ul {
+    list-style: circle inside url("img/gnomeList.gif");
+}
+#careList li {
+    color: #98282f;
+    font-style: italic;
+}
+
+dt{
+    color: #Aa4c51;
+    font-size: 125%;
+    font-weight: bold;
+    font-style: italic;
+}
+dd {
+    color: #548052;
+    padding-bottom: 10px;
+}
+#staff {
+    padding-top: 15px;
+    margin-bottom: 30px;
+    font-size: 90%;
+}
+#adopt {
+    max-width: 600px;
+    margin: auto;
+}
+.info {
+    font-style: italic;
+    font-size: 90%;
+    color: #98282f;
+}
+.adoptName {
+    text-align: center;
+}
+#adopt1 {
+    display: grid;
+    grid-template-columns: 125px auto;
+    gap: 15px;
+}
+#adopt1 img {
+    grid-column: 1 / 2;
+    grid-row: 1/ 3;
+}
+#adopt1 p {
+    grid-column: 2 / 3;
+    text-indent: 0;
+    text-align: right;
+}
+#adopt2 {
+    display: grid;
+    grid-template-columns: auto 125px;
+    gap: 15px;
+}
+#adopt2 img {
+    grid-column: 2 / 3;
+    grid-row: 1/ 3;
+}
+#adopt2 p {
+    grid-column: 1 / 2;
+    text-indent: 0;
+}
+#adopt3 {
+    display: grid;
+    grid-template-columns: 125px auto;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+#adopt3 img {
+    grid-column: 1 / 2;
+    grid-row: 1/ 3;
+}
+#adopt3 p {
+    grid-column: 2 / 3;
+    text-indent: 0;
+    text-align: right;
+}
+#adopt img {
+    box-shadow: #9e8a7a 5px 5px 5px;
+    border: white solid 5px;
+    border-bottom: white solid 20px;
+    overflow: hidden;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 400px;
+    padding: 1px 20px 20px 20px;
+    color: #548052;
+}
+input, textarea {
+    margin-bottom: .5em;
+}
+.gnomaPalooza {
+    color: #Aa4c51;
+    font-weight: bold;
+}
+#contact {
+    font-size: 90%;
+    color: #548052;
+}
+#contact a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #98282f;
+}
+#contact a:hover {
+    color: #Aa4c51;
+}
+footer {
+    padding: 15px 30px 15px 30px;
+    display: block;
+    background: #f6f2ef;
+    overflow: auto;
+    text-align: center;
+    font-size: 90%;
+    font-style: italic;
+    color: #548052;
+    border-top: #d4cdaf solid 2px;
+}
+footer a {
+    color: #98282f;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    color: #Aa4c51;
+}
+.pageContent a {
+    color: #98282f;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pageContent a:hover {
+    color: #Aa4c51;
+}
+#profileImage1, #profileImage2, #profileImage3, #profileImage4 {
+    height: 125px; width: 125px;
+    margin: auto;
+}
+#homeHero, #careHero {
+    display: none;
+}
+@media (min-width: 600px) {
+    header {
+        background-image: url("img/mushroomHeader.png");
+        background-repeat: no-repeat;
+        text-align: right;
+    }
+    .dropdown{
+        width: 100%;
+        position: fixed;
+    }
+    .pageContent {
+        max-width: 700px;
+        margin: auto;
+    }
+    .drop-menu {
+        display: block;
+    }
+    .navBackground {
+        height: 100%;
+        width: 25%;
+        background-image: linear-gradient(to top, #98282f 50%, rgba(255, 0, 0, 0) 50%);
+        background-size: 100% 200%;
+        border-bottom: none;
+        padding: .2em 0;
+        transition: background-position .5s;
+    }
+    .navBackground:hover {
+        background-position: 0 -100%;
+    }
+    .bar {
+        height: 35px; width: 2px;
+        background: #98282f;
+    }
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        border-top: none;
+        padding-top: 0;
+    }
+    nav span {
+        border-bottom: none;
+        padding: .2em 0;
+    }
+    #divider {
+        display: none;
+    }
+    #careHero, #homeHero {
+        margin-top: 30px;
+        display: flex;
+        float: right;
+    }
+    h3 {
+        clear: both;
+    }
+    main {
+        padding-top: 35px;
+        margin: 0 10%;
+    }
+    #adopt1 img, #adopt3 img {
+        transform: rotate(-10deg);
+    }
+    #adopt2 img {
+        transform: rotate(10deg);
+    }
+    footer {
+        margin: 0 10%;
+    }
+    .profile {
+        display: grid;
+        grid-template-columns: 125px auto;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding-top: 0;
+        margin: 0 20%;
+    }
+    footer {
+        margin: 0 20%;
+    }
+    .navBar {
+        width: 20%;
+        float: left;
+        display: block;
+    }
+    .navBackground {
+        background-image: linear-gradient(90deg, rgba(255, 0, 0, 0) 50%, #98282f 50%);
+        width: 100%;
+        background-size: 200% 100%;
+        padding: .3em 0;
+        border-top: #98282f solid 1px; border-bottom: #98282f solid 1px;
+        transition: background-position .75s;
+    }
+    .navBackground:hover {
+        background-position: 100%;
+    }
+    .bar {
+        display: none;
+    }
+    #staff {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        grid-template-rows: auto;
+    }
+    #profileImage1, #profileImage2, #profileImage3, #profileImage4 {
+        float: left;
+        margin: 10px
+    }
+    .profile {
+        display: block;
+    }
+    .profile {
+        margin-bottom: 0;
+    }
+}

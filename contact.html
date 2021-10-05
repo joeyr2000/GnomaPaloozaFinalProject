@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <meta name="description" content="Contact GnomaPalooza Old Gnome Sanctuary for adoption forms, gnome care questions,
+general concerns, or for any other reason you may need to hear from us.">
+    <!-- Added meta tag description for SEO -->
+    <title>GnomaPalooza | Contact</title>
+    <link rel="stylesheet" href="gnomapalooza.css">
+    <link rel="icon" href="img/favicon.ico">
+    <!-- Added favicon for SEO -->
+</head>
+<body>
+<div id="wrapper">
+    <div class="dropdown">
+        <header>
+            <a href="index.html"><h1>GnomaPalooza</h1></a>
+        </header>
+        <div class="drop-menu">
+            <nav>
+                <div class="navBar">
+                    <div class="navBackground">
+                        <span><a href="index.html">Home</a></span>
+                    </div>
+                    <div class="bar"></div>
+                    <div class="navBackground">
+                        <span><a href="gnomecare.html">Gnome Care</a></span>
+                    </div>
+                    <div class="bar"></div>
+                    <div class="navBackground">
+                        <span><a href="adopt.html">Adopt</a></span>
+                    </div>
+                    <div class="bar"></div>
+                    <div class="navBackground">
+                        <span><a href="contact.html">Contact</a></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="dividerContainer">
+        <div id="divider"></div>
+    </div>
+    <main>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="myFirst">* First name:</label><input type="text" id="myFirst" required="required">
+            <label for="myLast">* Last name:</label><input type="text" id="myLast" required="required">
+            <label for="myEmail">* Email:</label><input type="email" id="myEmail" required="required">
+            <label for="myPhone">Phone:</label><input type="tel" id="myPhone">
+            <label for="myReason">* Reason for contact:</label> <input list="reasonForContact" id="myReason" required="required">
+            <datalist id="reasonForContact">
+                <option value="Adopt"></option>
+                <option value="Gnome Questions"></option>
+                <option value="Concerns"></option>
+                <option value="Other"></option>
+            </datalist>
+            <label for="myComments">* Comments:</label><textarea id="myComments" rows="2" cols="30" required="required"></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+        <div id="contact">
+            <span class="gnomaPalooza">GnomaPalooza Old Gnome Sanctuary</span><br>
+            100 Mushroom Lane <br>
+            Gnomington, WA 98331 <br><br>
+            <a href="tel:123-456-7890">(123) 456-7890</a>
+            <!-- Added address & phone for SEO -->
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2021 GnomaPalooza Old Gnome Sanctuary<br>
+        <a href="mailto:jradi2@my.wctc.edu">jradi2@my.wctc.edu</a>
+    </footer>
+</div>
+</body>
+</html>
